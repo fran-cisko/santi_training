@@ -8,4 +8,5 @@ let getSequence = function (num1, num2){
     return between
 }
 
-console.log(getSequence(2,4))
+
+export default getSequence
