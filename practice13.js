@@ -3,8 +3,11 @@
 let coso = "algo que le puse"
 let numerin = 5786
 let arrayin = Array.from(coso)
+let arrayinNumber = Array.from(String(4621))
+console.log("es este, fijate", arrayinNumber)
 console.log(arrayin)
-const getSuma = (enterin)=>{
+
+const getSumaDigitos = (enterin)=>{
     let stringEnterin= String(enterin)
     let resultado = 0
 
