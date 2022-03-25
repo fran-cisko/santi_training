@@ -1,0 +1,10 @@
+03.Hacer una función que reciba un número y nos devuelva la suma de todos sus dígitos elevados al cubo
+04.Hacer una función que reciba un número y nos devuelva la suma de todos sus dígitos elevados a un número igual a la cantidad de dígitos que tiene
+05.Hacer una función que reciba un número y devuelva la suma de cada uno de sus dígitos elevado a sí mismo
+06.Hacer una función que reciba un número y devuelva true si la suma de cada uno de sus dígitos elevado a sí mismo es igual al número
+08. Hacer una funciòn que reciba un nùmero entero y me devuelva true si es narcisista y false en caso contrario.
+----------------------------------------------------------------------------------------------
+09. Hacer una funciòn que reciba un array de nùmeros y me devuelva aquellos que son narcisitas.
+10. Hacer una funciòn que reciba un array de nùmeros y me devuelva aquellos que son SUPERnarcisitas.
+01.Hacer una función que reciba 2 números (a y b) y me devuelva true si se da el caso de que la suma
+ed los divisores de a es igual a b y la suma de los divisores de b es igual a a, false en caso contrario
