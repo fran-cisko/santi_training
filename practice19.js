@@ -3,34 +3,35 @@
 // Si el numero que entra es igual al que sale es uno super narcisista.
 
 import getSequence from './practice04.js'
-let arrayParaProbar = getSequence(1,1000)
+let arrayParaProbar = getSequence(1,4000)
 let numberin = 123
 
-const getSuperNarcissist = (numerito)=>{
+const isSuperNarcissist = (numerito)=>{
     let stringNumberin = String(numerito)
     let sumDigit = 0
-   // let cantidadDigitosNumero = stringNumberin.length
+    let superNarcissistNumbers = false
+    
 
     for(let i = 0 ; i < stringNumberin.length; i++){
         let numero = Number(stringNumberin[i])
         let digitos = Math.pow(numero, numero)
-        let SuperNarcissistNumbers =[]
         sumDigit += digitos
     }
     if (sumDigit == numerito){
-        SuperNarcissistNumber.push(sumDigit)
+        
+        return superNarcissistNumbers = true
     } 
     
-    return SuperNarcissistNumber
+    return superNarcissistNumbers
 }
 
 
 
 const getSuperNarcissists= (arrayNumbers)=>{
     const arraySuperNarcissists= []
-    for(let i=0; i < getSuperNarcissist.length; i++){
-        let SuperNarcissistNumber = getSuperNarcissist(arrayNumbers[i])
-        if (SuperNarcissistNumber == true){
+    for(let i=0; i < arrayNumbers.length; i++){
+        
+        if (isSuperNarcissist(arrayNumbers[i])){
             arraySuperNarcissists.push(arrayNumbers[i])
         }
     }

@@ -13,6 +13,6 @@ let getDivisores = (num) =>{
     return array_divisores
 }
 
-console.log(getDivisores(numerito))
+
 
 export default getDivisores
