@@ -39,5 +39,5 @@ El número devuelto debe variar en función del número recibido
 11.Hacer una función que reciba el array de países de áfrica y devuelva un array con sólo aquellos paises que tienen mas de un idioma oficial
 11.Hacer una función que reciba el array de países de áfrica y devuelva un array con que contenga objetos con sólo el nombre y población de cada país
 11.Hacer una función que reciba el array de países de áfrica y devuelva los nombres de aquellos que tienen menos de 20.000.000 de habitantes
-11.Hacer una función que reciba el array de países de áfrica y devuelva el nombre de todos los países que tienen el francés como idioma oficial
+11.Hacer una función que reciba el array de países de áfrica y devuelva el nombre de todos los países que tienen el francés como idioma oficial(include)
 11.Hacer una función que reciba el array de países de áfrica y devuelva la cantidad total de habitantes de países que tienen el francés como idioma oficial
