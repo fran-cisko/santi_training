@@ -1,0 +1,43 @@
+00.Hacer una función que reciba 2 números y me diga si el primero es divisible por el segundo
+01.Hacer una función que reciba 1 número entero y me devuelva true si es primo y false en caso contrario
+02.Hacer una función que reciba un array de números y me devuelva un array con sólo aquellos que son primos
+03.Hacer una función que reciba 2 números enteros y devuelva un array con todos los números entre uno y el otro
+04.Hacer una función que reciba una array de números enteros y devuelva true si al menos uno de ellos es primo, false en caso contrario
+05.Hacer una función que reciba una array de números enteros y devuelva true si todos los números son primos, false en caso contrario
+06.Hacer una función que reciba un número entero y devuelva un array conteniendo todos los divisores de ese número
+07.Hacer una función que reciba un número entero y devuelva la suma de todos sus divisores
+08.Hacer una función que reciba un número entero y devuelva true si la suma de sus divisores es igual al número y false en caso contrario
+09.Hacer una función que reciba un array de números y devuelva otro array con sólo aquellos que son perfectos
+10.Hacer una función que reciba un número entero y devuelva la suma de todos sus dígitos
+11.Hacer una función que reciba un número y devuelva un array de enteros con cada uno de los dígitos de ese número
+
+12.Hacer una función que reciba 1 número y me diga (a y b) y me devuelva true si se da el caso de que la suma
+de los divisores de a es igual a b y la suma de los divisores de b es igual a a, false en caso contrario
+
+13.Hacer una funcion que reciba un número a y una lista de números y devuelva otra lista con todos aquellos
+numeros que estén en la lista y sean amigos de a
+
+14.Hacer una función que reciba una lista de números y devuelva todos aquellos que tienen números amigos
+
+15.Hacer una función que reciba un número y nos devuelva la suma de todos sus dígitos elevados al cubo
+16.Hacer una función que reciba un número y nos devuelva la suma de todos sus dígitos un número igual a la cantidad de dígitos que tiene
+17.Hacer una función que reciba un número y nos diga si es narcisista
+18.Hacer una función que reciba un array de enteros y nos devuelva sólo aquellos que son narcisistas
+
+00.Hacer una función que reciba un entero y devuelva un número de mersenne.
+El número devuelto debe variar en función del número recibido
+
+00.Hacer una función que reciba un número entero y me devuelva true en caso de que sea primo y de mersenne, false en caso contrario
+00.Hacer una función que reciba una lista de números y devuelva una lista de números de mersenne
+
+00.Hacer una función que reciba un número y devuelva la suma de cada uno de sus dígitos elevado a sí mismo
+00.Hacer una función que reciba un número y devuelva true si la suma de cada uno de sus dígitos elevado a sí mismo es igual al número
+00.Hacer una función que reciba un array de enteros y devuelva sólo aquellos que son super narcisistas
+-----------------------------------------------------------------------------------------------------------
+11.Hacer una función que reciba el array de países de áfrica y devuelva un array con sólo los nombres de los países
+11.Hacer una función que reciba el array de países de áfrica y devuelva un array con sólo aquellos paises que tienen un área mayor a 1.000.000 de km2
+11.Hacer una función que reciba el array de países de áfrica y devuelva un array con sólo aquellos paises que tienen mas de un idioma oficial
+11.Hacer una función que reciba el array de países de áfrica y devuelva un array con que contenga objetos con sólo el nombre y población de cada país
+11.Hacer una función que reciba el array de países de áfrica y devuelva los nombres de aquellos que tienen menos de 20.000.000 de habitantes
+11.Hacer una función que reciba el array de países de áfrica y devuelva el nombre de todos los países que tienen el francés como idioma oficial
+11.Hacer una función que reciba el array de países de áfrica y devuelva la cantidad total de habitantes de países que tienen el francés como idioma oficial

@@ -15,4 +15,6 @@ const getNarcissists = (arrayNumbers)=>{
 
 }
 
-console.log(getNarcissists(arrayParaProbar))
+// console.log(arrayParaProbar.filter(isNarcissist)," esto es con filter")
+
+//console.log(getNarcissists(arrayParaProbar))
