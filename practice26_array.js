@@ -12,4 +12,4 @@ const getCountriesFrenchOfficialLanguage = (countries)=> countries
 
 //console.log(getCountriesFrenchOfficialLanguage(africa))
 
-export default getCountriesFrenchOfficialLanguage
+export default isFrenchOfficialLanguage

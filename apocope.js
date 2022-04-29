@@ -6,7 +6,7 @@ function saludarConNombreCorto(){
      saludarConApocope(nombre)
     }
     else{
-       saludo_si_nombre_corto
+       saludo_si_nombre_corto(nombre)
     }
 
 }
