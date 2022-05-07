@@ -1,0 +1,37 @@
+.tasks-list {
+    margin: 5px;
+    padding: 10px;
+    background-color: #ccf;
+    border-radius: 8px;
+    width: 400px;
+    min-height: 400px;
+}
+.tasks-list h1{
+    margin: 10px;
+    color: #333;
+}
+body {
+    margin: 0px;
+}
+button {
+    cursor: pointer;
+}
+button:disabled {
+    cursor: not-allowed;
+}
+.tasks .task {
+    display: flex;
+    border-left: 3px solid #f88;
+    margin: 5px 2px 0px 2px;
+    padding: 3px;
+}
+.tasks .task .content{
+    min-width: 300px;
+}
+.tasks .task .remove{
+    color: #00f;
+}
+input{
+    outline: none;
+}
+
