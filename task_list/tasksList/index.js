@@ -44,13 +44,14 @@ function setInitialBehavior() {
 
         if (event.keyCode == 13) {
             addTaskButton.click()
-            event.target.value = ''
+            
         }
     })
 
     addTaskButton.addEventListener("click", () => {
         const newTask = createNewTask(newTaskInput.value)
         tasks.appendChild(newTask)
+        newTaskInput.value = ''
     
     })
 
