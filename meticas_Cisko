@@ -1,0 +1,20 @@
+turnos
+	-id
+	-nombre			string
+
+actividades
+	-id
+	-nombre			string
+
+eventos
+	-id
+	-actividad_id	int (fk)
+	-tiempo			int
+	-fecha			fecha
+	
+metricas_diarias
+	-fecha			fecha
+	-turno_id		int 	(fk) -- foreign key
+	-nivel_energia	int
+	-tristeza		int
+
