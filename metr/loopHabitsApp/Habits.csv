@@ -1,0 +1,25 @@
+Position,Name,Question,Description,NumRepetitions,Interval,Color
+001,seguimiento de hábitos,,,1,1,#1976D2
+002,Work Block 1,Sino estudio,,3,7,#D32F2F
+003,Study Block,,,3,7,#D32F2F
+004,Tarea más importante,,,5,7,#1976D2
+005,Respiración Wim Hof,Noradrenalina. Rato antes de almorzar o después de la digestión,,1,1,#1976D2
+006,Ducha fría Wim Hof,,,3,7,#1976D2
+007,Work Block 2,,,2,7,#D32F2F
+008,Respiración Buteyko,,,1,1,#1976D2
+009,Aeróbico,,,2,7,#1976D2
+010,Pesas,,,2,7,#1976D2
+011,Ejercicios posturales,"Serrato anterior, facia",,3,7,#1976D2
+012,Flow state,,,5,7,#1976D2
+013,rutina de noche,"Disminuir luces, evitar mate y estimulantes, lavo dientes, seguimiento de hábitos, diario",,5,7,#1976D2
+014,Medito,"10 a 25 min. Con M > 15min entro en estado ""avatar""",,5,7,#1976D2
+015,Energía,Del 1 al 10. Con E => 6 funciono aceptable,,1,1,#E64A19
+016,Dormí,"Horas, continuidad y profundidad del 1 al 10",,1,1,#E64A19
+017,Desgano (t),Porcentaje de tiempo del día?,,1,1,#00897B
+018,Desgano (i),Intensidad del 1 al 10,,1,1,#00897B
+019,Tristeza,Cuanto tiempo?porcentaje del día despierto,,1,1,#00897B
+020,Tristeza (i),Del 1 al 10,,1,1,#00897B
+021,Deep work,,,1,5,#1976D2
+022,Bailo,,,2,7,#1976D2
+023,planificación semanal,,,1,9,#1976D2
+024,Suplementos,,,1,1,#1976D2
