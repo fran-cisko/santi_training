@@ -32,6 +32,8 @@ def evento(date):
     conn = mysql.connection
     cur = conn.cursor(dictionary=True)
     cur.execute(query_posta, ([date]))
+    print(query_posta)
+    print(date)
     output = cur.fetchall()
     return output
 
@@ -47,6 +49,7 @@ def ultimos_eventos():
     output = cur.fetchall()
     return output
     
+''' ejemplo de endpoint hardcodeado
 
 @app.route('/ultimos-eventos-2')
 def ultimos_eventos_2():
@@ -79,3 +82,5 @@ def ultimos_eventos_2():
             "duracion" : 2
         }
     ]
+
+    '''
