@@ -1,0 +1,1 @@
+insert into metricas_diarias (fecha,turno_id,nivel_energia) values (%s, %s , %s);

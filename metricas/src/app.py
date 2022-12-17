@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from flask import render_template
 from flask_mysql_connector import MySQL
 
@@ -32,11 +32,9 @@ def evento(date):
     conn = mysql.connection
     cur = conn.cursor(dictionary=True)
     cur.execute(query_posta, ([date]))
-    print(query_posta)
-    print(date)
     output = cur.fetchall()
     return output
-
+# /home/cisko/santi_training/metricas/src/app.py
 
 @app.route('/ultimos-eventos')
 def ultimos_eventos():
@@ -48,7 +46,46 @@ def ultimos_eventos():
     cur.execute(query_posta)
     output = cur.fetchall()
     return output
-    
+
+@app.route('/metricas')
+def metricas():
+    f = open("./queries/metricas.sql","r")
+    query_array = f.readlines()
+    query_posta = " ".join(query_array)
+    conn = mysql.connection
+    cur = conn.cursor(dictionary=True)
+    cur.execute(query_posta)
+    output = cur.fetchall()
+    return output
+# methods=['GET', 'POST'])
+
+
+@app.route('/metricas-insert', methods=['POST'])
+def metricas_insert():
+    f = open("./queries/metricas_insert.sql","r")
+
+    '''
+    fecha = request.form['fecha']
+    turno_id = request.form['turno_id']
+    nivel_energia= request.form['nivel_energia']
+    '''
+
+    fecha = request.form.get('fecha', "2022-12-15")
+    turno_id = request.form.get('turno_id', "4")
+    nivel_energia = request.form.get('nivel_energia', "1")
+
+    print(fecha)
+    print(turno_id)
+    print(nivel_energia)
+
+    query_array = f.readlines()
+    query_posta = " ".join(query_array)
+    conn = mysql.connection
+    cur = conn.cursor(dictionary=True)
+    cur.execute(query_posta,([fecha,turno_id,nivel_energia]))
+    output = cur.fetchall()
+    return output
+
 ''' ejemplo de endpoint hardcodeado
 
 @app.route('/ultimos-eventos-2')
