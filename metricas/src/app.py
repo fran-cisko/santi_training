@@ -21,7 +21,7 @@ def connection():
 
 @app.route("/")
 def hello_world():
-    return "hola"
+    return render_template('app.html')
 
 
 @app.route('/evento/<date>')
@@ -60,7 +60,7 @@ def metricas():
 # methods=['GET', 'POST'])
 
 
-@app.route('/metricas-insert', methods=['POST'])
+@app.route('/metricas-insert', methods=['GET','POST'])
 def metricas_insert():
     f = open("./queries/metricas_insert.sql","r")
 
@@ -70,9 +70,9 @@ def metricas_insert():
     nivel_energia= request.form['nivel_energia']
     '''
 
-    fecha = request.form.get('fecha', "2022-12-15")
-    turno_id = request.form.get('turno_id', "4")
-    nivel_energia = request.form.get('nivel_energia', "1")
+    fecha = request.form.get('fecha')
+    turno_id = request.form.get('turno_id')
+    nivel_energia = request.form.get('nivel_energia')
 
     print(fecha)
     print(turno_id)
@@ -83,6 +83,8 @@ def metricas_insert():
     conn = mysql.connection
     cur = conn.cursor(dictionary=True)
     cur.execute(query_posta,([fecha,turno_id,nivel_energia]))
+    conn.commit()
+    print('inertó en la base de datos')
     output = cur.fetchall()
     return output
 

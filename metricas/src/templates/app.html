@@ -1,5 +1,11 @@
-<h1>eea ea pepe </h1>
-{% for message in data %}
-    <div class="flash">{{ message }}</div>
-{% endfor %}
-
+<html>
+	<form method="post" action="http://127.0.0.1:5000/metricas-insert">
+		fecha
+		<input type="text" name="fecha">
+		turno
+		<input type="text" name="turno_id">
+		nivel energia
+		<input type="text" name="nivel_energia">
+		<input type="submit" value="Enviar">
+	</form>
+</html>
