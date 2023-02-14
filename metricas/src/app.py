@@ -23,6 +23,11 @@ def connection():
 def hello_world():
     return render_template('app.html')
 
+@app.route("/eventos")
+def eventos():
+    return render_template('eventos_form.html')
+
+
 
 @app.route('/evento/<date>')
 def evento(date):
@@ -85,6 +90,32 @@ def metricas_insert():
     cur.execute(query_posta,([fecha,turno_id,nivel_energia]))
     conn.commit()
     print('inertó en la base de datos')
+    output = cur.fetchall()
+    return output
+
+    ####### eventos insert (resive datos)##################
+
+@app.route('/eventos-insert', methods=['GET','POST'])
+def eventos_insert():
+    f = open("./queries/eventos_insert.sql","r")
+
+
+    fecha = request.form.get('fecha')
+    actividad_id = request.form.get('actividad_id')
+    prioridad = request.form.get('prioridad')
+    turno_id = request.form.get('turno_id')
+    duracion = request.form.get('duracion')
+    actividad_personalizada = request.form.get('actividad_personalizada')
+
+    print(fecha)
+
+    query_array = f.readlines()
+    query_posta = " ".join(query_array)
+    conn = mysql.connection
+    cur = conn.cursor(dictionary=True)
+    cur.execute(query_posta,([fecha, actividad_id, prioridad, turno_id, duracion, actividad_personalizada]))
+    conn.commit()
+    print('insertó en la base de datos')
     output = cur.fetchall()
     return output
 

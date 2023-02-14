@@ -1,0 +1,1 @@
+insert into eventos(fecha,actividad_id, prioridad, turno_id, duracion, actividad_personalizada) values (%s, %s , %s, %s, %s , %s);
