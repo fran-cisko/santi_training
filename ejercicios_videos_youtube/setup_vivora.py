@@ -41,19 +41,23 @@ def poner_pelota(pelota):
    tablero[posicion_sur_norte][posicion_este_oeste].append(pelota)
 
 
+def llenar_espacios(celda):
+    if not celda:
+        return ["               "]
+    else:
+        return celda
+
 
 #solución. Aquí se escribiría la solución
 # agregar el parámetro (Pelota.VERDE) a la función correspondiente
 # Para moverse a la derecha agregar al parámetro (Sentido.Este) a la función mover().
-poner_pelota(Pelota.VERDE)
-mover(Sentido.ESTE)
-poner_pelota(Pelota.VERDE)
-mover(Sentido.ESTE)
-poner_pelota(Pelota.VERDE)
-mover(Sentido.ESTE)
 
 
 # Para mostrar solución
-print(tablero)
+#for fila in tablero:
+ #   print(fila)
 
-
+# Para mostrar solución
+for fila in tablero:
+    fila_con_espacios = list(map(llenar_espacios, fila))
+    print(fila_con_espacios)

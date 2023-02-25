@@ -15,9 +15,10 @@ class Sentido (Enum):
 
 tablero = [
     [[],[],[], []],
+    [[],[],[], []],
+    [[],[],[], []],
     [[],[],[], []]
 ]
-
 
 
 #posición inicial
@@ -46,14 +47,13 @@ def poner_pelota(pelota):
 # agregar el parámetro (Pelota.VERDE) a la función correspondiente
 # Para moverse a la derecha agregar al parámetro (Sentido.Este) a la función mover().
 poner_pelota(Pelota.VERDE)
-mover(Sentido.ESTE)
+mover(Sentido.NORTE)
 poner_pelota(Pelota.VERDE)
-mover(Sentido.ESTE)
+mover(Sentido.NORTE)
 poner_pelota(Pelota.VERDE)
-mover(Sentido.ESTE)
+mover(Sentido.NORTE)
 
 
 # Para mostrar solución
-print(tablero)
-
-
+for fila in tablero:
+    print(fila)

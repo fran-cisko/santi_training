@@ -15,6 +15,8 @@ class Sentido (Enum):
 
 tablero = [
     [[],[],[], []],
+    [[],[],[], []],
+    [[],[],[], []],
     [[],[],[], []]
 ]
 
@@ -40,20 +42,35 @@ def mover(sentido):
 def poner_pelota(pelota):
    tablero[posicion_sur_norte][posicion_este_oeste].append(pelota)
 
+def llenar_espacios(celda):
+    if not celda:
+        return ["               "]
+    else:
+        return celda
+
+
 
 
 #solución. Aquí se escribiría la solución
 # agregar el parámetro (Pelota.VERDE) a la función correspondiente
 # Para moverse a la derecha agregar al parámetro (Sentido.Este) a la función mover().
-poner_pelota(Pelota.VERDE)
-mover(Sentido.ESTE)
-poner_pelota(Pelota.VERDE)
-mover(Sentido.ESTE)
-poner_pelota(Pelota.VERDE)
-mover(Sentido.ESTE)
 
+poner_pelota(Pelota.VERDE)
+mover(Sentido.ESTE)
+poner_pelota(Pelota.VERDE)
+mover(Sentido.NORTE)
+poner_pelota(Pelota.VERDE)
+mover(Sentido.NORTE)
+poner_pelota(Pelota.VERDE)
+mover(Sentido.ESTE)
+poner_pelota(Pelota.VERDE)
+mover(Sentido.ESTE)
+poner_pelota(Pelota.VERDE)
+mover(Sentido.SUR)
+poner_pelota(Pelota.VERDE)
+mover(Sentido.SUR)
 
 # Para mostrar solución
-print(tablero)
-
-
+for fila in tablero:
+    fila_con_espacios = list(map(llenar_espacios, fila))
+    print(fila_con_espacios)
